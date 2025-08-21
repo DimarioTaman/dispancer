@@ -7,7 +7,7 @@ export default function Service() {
     case "virvat_zub":
       return <VirvatZub />;
     default:
-      return <div>Услуга не найдена</div>;
+      return <div>Услуга точно не найдена!</div>;
   }
 }
 
