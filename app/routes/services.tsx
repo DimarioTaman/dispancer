@@ -4,13 +4,31 @@ export default function Service() {
   const { id } = useParams();
 
   switch (id) {
-    case "virvat_zub":
-      return <VirvatZub />;
+    case "hit_him":
+      return <Hitthedrunk />;
     default:
-      return <div>Услуга точно не найдена!</div>;
+      return <div>Зря ты сюда зашел, парень.</div>;
+    case "detox":
+      return <Detox />;
+    case "coding":
+      return <Coding />;
+    case "psychiatrist":
+      return <Psychiatrist />;
   }
 }
 
-function VirvatZub() {
-  return <div>Услуга вырвать зуб</div>;
+function Hitthedrunk() {
+  return <div>Услуга дать люлей синяку</div>;
+}
+
+function Detox() {
+  return <div>Услуги детоксикации</div>;
+}
+
+function Coding() {
+  return <div>Кодирование. Химическая защита от алкоголя</div>;
+}
+
+function Psychiatrist() {
+  return <div>Консультации психиатра-нарколога. Психотерапия</div>;
 }
